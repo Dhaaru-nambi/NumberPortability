@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring: 
+  application:
+    name: numberportabilityportalproject
+  datasource:
+    url: jdbc:mysql://localhost:3306/number_portabilitydb?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+toyandbooklibapp:
+  jwtSecret: BLUEYONDERBELLANDURBENGALURUBLUEYONDERBELLANDURBENGALURUBLUEYONDERBELLANDURBENGALURUBENGALURUBLUEYONDERBELLANDURBENGALURUBENGALURUBLUEYONDERBELLANDURBENGALURU
+  jwtExpirationMs: 86400000
